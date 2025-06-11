@@ -18,6 +18,7 @@ A new Flutter project.
 <p align="center">
   <img src="image/Register_View.png" style="width: 25%;" alt="Image">
 </p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
