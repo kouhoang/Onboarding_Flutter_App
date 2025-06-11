@@ -1,0 +1,18 @@
+# Flutter/Dart project
+*.dart linguist-language=Dart
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+
+# Ignore generated and platform files from language statistics
+android/** linguist-vendored
+ios/** linguist-vendored
+web/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+build/** linguist-generated
+.dart_tool/** linguist-generated
+
+# Mark as Dart project
+* linguist-language=Dart
+*.md linguist-documentation
