@@ -1,1 +1,0 @@
-@rpath/onboarding_login_register_app_ui.debug.dylib
