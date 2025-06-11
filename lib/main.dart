@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Job Discovery App',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Inter'),
       home: OnboardingMainScreen(),
     );
