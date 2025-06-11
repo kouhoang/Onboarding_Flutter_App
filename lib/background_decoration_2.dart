@@ -29,7 +29,7 @@ class BackgroundDecoration2 extends StatelessWidget {
                 'assets/images/ellipse_2.png',
                 width: 350.0,
                 height: 350.0,
-                color: Color.fromRGBO(239, 240, 244, 1),
+                color: Color.fromRGBO(239, 238, 247, 1),
               ),
             ),
             Positioned(
@@ -39,7 +39,7 @@ class BackgroundDecoration2 extends StatelessWidget {
                 'assets/images/ellipse_1.png',
                 width: 285.0,
                 height: 285.0,
-                color: Color.fromRGBO(239, 240, 244, 1),
+                color: Color.fromRGBO(239, 238, 247, 1),
               ),
             ),
           ],

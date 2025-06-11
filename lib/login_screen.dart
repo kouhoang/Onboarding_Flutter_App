@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_login_register_app_ui/background_decoration_2.dart';
+import 'package:onboarding_login_register_app_ui/register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -34,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
               children: [
-                SizedBox(height: 90),
+                SizedBox(height: 100),
                 Center(
                   child: Text(
                     'Login here',
@@ -74,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
         // Email TextField
         Container(
           decoration: BoxDecoration(
-            color: Color.fromRGBO(239, 240, 244, 1),
+            color: Color.fromRGBO(224, 226, 234, 1),
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
               color: _emailFocusNode.hasFocus
@@ -109,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
         // Password TextField
         Container(
           decoration: BoxDecoration(
-            color: Color.fromRGBO(239, 240, 244, 1),
+            color: Color.fromRGBO(224, 226, 234, 1),
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
               color: _passwordFocusNode.hasFocus
@@ -190,7 +191,10 @@ class _LoginScreenState extends State<LoginScreen> {
         // Create New Account Link
         TextButton(
           onPressed: () {
-            // Handle create new account
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RegisterScreen()),
+            );
           },
           child: Text(
             'Create new account',
@@ -221,7 +225,7 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _buildSocialButton(
-              icon: Icons.g_mobiledata,
+              iconPath: 'assets/images/google-black-icon.png',
               onPressed: () {
                 // Handle Google login
               },
@@ -249,19 +253,22 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _buildSocialButton({
-    required IconData icon,
+    IconData? icon,
+    String? iconPath,
     required VoidCallback onPressed,
   }) {
     return Container(
       width: 60,
       height: 40,
       decoration: BoxDecoration(
-        color: Colors.grey[300],
+        color: Colors.grey[200],
         borderRadius: BorderRadius.circular(10),
       ),
       child: IconButton(
         onPressed: onPressed,
-        icon: Icon(icon, size: 25, color: Colors.black),
+        icon: iconPath != null
+            ? Image.asset(iconPath, width: 20, height: 20)
+            : Icon(icon, size: 25, color: Colors.black),
       ),
     );
   }

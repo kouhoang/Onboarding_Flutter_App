@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_login_register_app_ui/background_decoration.dart';
 import 'package:onboarding_login_register_app_ui/login_screen.dart';
+import 'package:onboarding_login_register_app_ui/register_screen.dart';
 
 class OnboardingMainScreen extends StatelessWidget {
   const OnboardingMainScreen({super.key});
@@ -117,7 +118,12 @@ class OnboardingMainScreen extends StatelessWidget {
                     Expanded(
                       child: TextButton(
                         onPressed: () {
-                          // Navigate to register
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => RegisterScreen(),
+                            ),
+                          );
                         },
                         style: TextButton.styleFrom(
                           foregroundColor: Color(0xFF2C2C2C),
