@@ -2,6 +2,22 @@
 
 A new Flutter project.
 
+## Demo
+<p align="center">
+  <img src="image/Run.gif" style="width: 25%;" alt="Image">
+</p>
+
+<p align="center">
+  <img src="image/Main_Onboarding_View.png" style="width: 25%;" alt="Image">
+</p>
+
+<p align="center">
+  <img src="image/Login_View.png" style="width: 25%;" alt="Image">
+</p>
+
+<p align="center">
+  <img src="image/Register_View.png" style="width: 25%;" alt="Image">
+</p>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
