@@ -7,12 +7,12 @@ class BackgroundDecoration extends StatelessWidget {
   final bool showBottomRectangles;
 
   const BackgroundDecoration({
-    Key? key,
+    super.key,
     this.overlayColor,
     this.opacity = 0.29,
     this.showTopEllipses = true,
     this.showBottomRectangles = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
